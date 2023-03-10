@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+<h1 align="center">Scantor</h1> 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![News app cover](https://res.cloudinary.com/dynjwlpl3/image/upload/v1676479213/Projects%20readme/newssshome_vawmvf.png)
 
-## Available Scripts
+<h2 align="center">Web application to Generate and Read QR Code.</h2>    
 
-In the project directory, you can run:
+<br />
+<p align="center">
+    <img src="https://img.shields.io/badge/HTML5-%230077B5.svg?&style=for-the-badge&color=orange&logo=HTML5&logoColor=white" alt="html"/>  
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3"/> 
+    <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/>  
+    <img src="https://img.shields.io/badge/JAVASCRIPT-%230077B5.svg?&style=for-the-badge&color=black&logo=JAVASCRIPT&logoColor=yellow" alt="javascript"/> 
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="reactjs" />
+    <img src="https://img.shields.io/badge/Chakra%20UI-3bc7bd?style=for-the-badge&logo=chakraui&logoColor=white" alt="chakra-ui"/>  
+    <img src="https://img.shields.io/badge/Rest_API-02303A?style=for-the-badge&logo=react-router&logoColor=white" alt="restAPI"/>   
+</p>
+     
+  <h3 align="center"><a href="https://readyreads.onrender.com/"><strong>Want to see live preview »</strong></a></h3>
+   
+    
+  <p align="center"> 
+    <br />
+    <a href="https://github.com/Deepeshgodwani/QR-Code-Generator-and-Scanner/issues">Report Bug</a>    &#10023;
+    <a href="#Getting-Started">Getting Started</a> &#10023; <a href="#Install">Installing</a> &#10023;    
+    <a href="#Contact">Author</a> &#10023;
+  </p>
+<br/>
+QR code generator and scanner tool is designed to simplify your life by allowing you to create and scan QR codes with ease. Whether you need to generate codes for business or personal use, you can quickly create QR codes for websites, products, events, and more, and scan codes to access information instantly.
 
-### `npm start`
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Glimpses of Scantor:
+<table>
+  <tr>
+    <td><img src="https://res.cloudinary.com/dynjwlpl3/image/upload/v1676478749/Projects%20readme/news1_rr7ojb.png" alt="home" /></td>
+    <td><img src="https://res.cloudinary.com/dynjwlpl3/image/upload/v1676478154/Projects%20readme/news2_buakml.png" alt="health" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://res.cloudinary.com/dynjwlpl3/image/upload/v1676478172/Projects%20readme/news3_jxpczm.png" alt="education" /></td>
+    <td><img src="https://res.cloudinary.com/dynjwlpl3/image/upload/v1676478173/Projects%20readme/news5_xdlcnl.png" alt="" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://res.cloudinary.com/dynjwlpl3/image/upload/v1676478171/Projects%20readme/new5_yfk1q8.png" /></mobile>
+    <td><img src="https://res.cloudinary.com/dynjwlpl3/image/upload/v1676478173/Projects%20readme/news4_qkf63n.png" alt="tab" /></td>
+  </tr>
+</table>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br />
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project was built using React v 17.0.2, Tailwind CSS and Rest API. It is a web application and for running on your local environment you should follow these guidelines.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- NPM 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Setup
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The project repository can be found in [GitHub link](https://github.com/Deepeshgodwani/QR-Code-Generator-and-Scanner) or just clone the project using this command. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+Using HTTPS
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# git clone  https://github.com/Deepeshgodwani/QR-Code-Generator-and-Scanner.git
+```
 
-## Learn More
++ Open terminal on your workspace with
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+cd /home/workspace/ReadyReads
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Install NPM
 
-### Analyzing the Bundle Size
+Check that you have node and npm installed
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To check if you have Node.js installed, run this command in your terminal:
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+node -v
+```
 
-### Advanced Configuration
+To confirm that you have npm installed you can run this command in your terminal:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+```
+npm -v
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+To install all the dependences of the project, run the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+```
+npm install
+```
+
+
+To run the application, run the following command:
+
+```
+npm run dev
+```
+
+
+### Tools used on this project
+
+- Visual Studio Code
+
+<br/>
+
+
+## Contact
+
+If you want to contact me, you can reach me through below handles.
+
+[![linkedin](https://img.shields.io/badge/Deepesh_Godwani-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/deeepesh-godwani-4269531b0)
+[![Twitter](https://img.shields.io/badge/Deepesh_Godwani-20232A?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/Deepeshgodwani)
+
+© 2023 Deepesh Godwani
+
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
