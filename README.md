@@ -49,7 +49,7 @@ QR code generator and scanner tool is designed to simplify your life by allowing
 
 ## Getting Started
 
-This project was built using React v 17.0.2, Tailwind CSS and Rest API. It is a web application and for running on your local environment you should follow these guidelines.
+This project was built using, Tailwind CSS, React, ChakraUI and Rest API. It is a web application and for running on your local environment you should follow these guidelines.
 
 
 ### Prerequisites
