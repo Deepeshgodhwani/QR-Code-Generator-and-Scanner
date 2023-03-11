@@ -7,7 +7,7 @@ function Header() {
   return (
     <div className="flex -top-7 left-8 absolute z-20 ">
       <div>
-        <Link to="/">
+        <Link to="/QR-Code-Generator-and-Scanner">
           <img alt="" className="w-72" src={logo}></img>
         </Link>
       </div>

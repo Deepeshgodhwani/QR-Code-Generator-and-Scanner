@@ -43,7 +43,7 @@ function Home() {
             className=" px-4  text-black h-12 font-semibold flex cursor-pointer w-48 justify-center 
             items-center rounded-3xl bg-[rgb(30,247,255)]"
           >
-            <Link to={"/getStarted"}>Get Started</Link>
+            <Link to={"/QR-Code-Generator-and-Scanner/getStarted"}>Get Started</Link>
           </div>
         </div>
       </div>
