@@ -1,6 +1,6 @@
 <h1 align="center">Scantor</h1> 
 
-![News app cover](https://res.cloudinary.com/dynjwlpl3/image/upload/v1676479213/Projects%20readme/newssshome_vawmvf.png)
+![News app cover](https://res.cloudinary.com/dynjwlpl3/image/upload/v1678535486/Projects%20readme/Scantor_home_q9djag.png)
 
 <h2 align="center">Web application to Generate and Read QR Code.</h2>    
 
@@ -15,7 +15,7 @@
     <img src="https://img.shields.io/badge/Rest_API-02303A?style=for-the-badge&logo=react-router&logoColor=white" alt="restAPI"/>   
 </p>
      
-  <h3 align="center"><a href="https://readyreads.onrender.com/"><strong>Want to see live preview »</strong></a></h3>
+  <h3 align="center"><a href="https://deepeshgodwani.github.io/QR-Code-Generator-and-Scanner/"><strong>Want to see live preview »</strong></a></h3>
    
     
   <p align="center"> 
@@ -32,17 +32,13 @@ QR code generator and scanner tool is designed to simplify your life by allowing
 ## Glimpses of Scantor:
 <table>
   <tr>
-    <td><img src="https://res.cloudinary.com/dynjwlpl3/image/upload/v1676478749/Projects%20readme/news1_rr7ojb.png" alt="home" /></td>
-    <td><img src="https://res.cloudinary.com/dynjwlpl3/image/upload/v1676478154/Projects%20readme/news2_buakml.png" alt="health" /></td>
+    <td><img src="https://res.cloudinary.com/dynjwlpl3/image/upload/v1678535485/Projects%20readme/scantor2_tnes2u.png" alt="GetStarted" /></td>
+    <td><img src="https://res.cloudinary.com/dynjwlpl3/image/upload/v1678535485/Projects%20readme/scantor3_nzkgn5.png" alt="Generator" /></td>
   </tr>
   <tr>
-    <td><img src="https://res.cloudinary.com/dynjwlpl3/image/upload/v1676478172/Projects%20readme/news3_jxpczm.png" alt="education" /></td>
-    <td><img src="https://res.cloudinary.com/dynjwlpl3/image/upload/v1676478173/Projects%20readme/news5_xdlcnl.png" alt="" /></td>
+    <td><img src="https://res.cloudinary.com/dynjwlpl3/image/upload/v1678535485/Projects%20readme/scantor4_xdgtx8.png" alt="Reader" /></td>
   </tr>
-  <tr>
-    <td><img src="https://res.cloudinary.com/dynjwlpl3/image/upload/v1676478171/Projects%20readme/new5_yfk1q8.png" /></mobile>
-    <td><img src="https://res.cloudinary.com/dynjwlpl3/image/upload/v1676478173/Projects%20readme/news4_qkf63n.png" alt="tab" /></td>
-  </tr>
+
 </table>
 
 <br />
@@ -71,7 +67,7 @@ Using HTTPS
 + Open terminal on your workspace with
 
 ```
-cd /home/workspace/ReadyReads
+cd /home/workspace/QR-Code-Generator-and-Scanner
 ```
 
 
