@@ -16,7 +16,7 @@ function QrScanner() {
       if (!file) return;
       let formData = new FormData();
       formData.append("file", file);
-      let response = await fetch("http://api.qrserver.com/v1/read-qr-code/", {
+      let response = await fetch("https://api.qrserver.com/v1/read-qr-code/", {
         method: "POST",
         body: formData,
       });
