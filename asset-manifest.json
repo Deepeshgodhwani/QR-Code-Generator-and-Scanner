@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/QR-Code-Generator-and-Scanner/static/css/main.5a03ef5b.css",
-    "main.js": "/QR-Code-Generator-and-Scanner/static/js/main.ddbbc54c.js",
+    "main.js": "/QR-Code-Generator-and-Scanner/static/js/main.f26a4e7c.js",
     "static/js/787.47e3f016.chunk.js": "/QR-Code-Generator-and-Scanner/static/js/787.47e3f016.chunk.js",
     "static/media/bg3.jpg": "/QR-Code-Generator-and-Scanner/static/media/bg3.684c8ef4ad8520172696.jpg",
     "static/media/logo2.png": "/QR-Code-Generator-and-Scanner/static/media/logo2.b63d12d67c0be799f7c5.png",
@@ -10,11 +10,11 @@
     "static/media/gen.webp": "/QR-Code-Generator-and-Scanner/static/media/gen.e2b6a7476e0e7c0c43e0.webp",
     "index.html": "/QR-Code-Generator-and-Scanner/index.html",
     "main.5a03ef5b.css.map": "/QR-Code-Generator-and-Scanner/static/css/main.5a03ef5b.css.map",
-    "main.ddbbc54c.js.map": "/QR-Code-Generator-and-Scanner/static/js/main.ddbbc54c.js.map",
+    "main.f26a4e7c.js.map": "/QR-Code-Generator-and-Scanner/static/js/main.f26a4e7c.js.map",
     "787.47e3f016.chunk.js.map": "/QR-Code-Generator-and-Scanner/static/js/787.47e3f016.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5a03ef5b.css",
-    "static/js/main.ddbbc54c.js"
+    "static/js/main.f26a4e7c.js"
   ]
 }
