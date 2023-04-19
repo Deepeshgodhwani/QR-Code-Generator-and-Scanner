@@ -15,7 +15,7 @@
     <img src="https://img.shields.io/badge/Rest_API-02303A?style=for-the-badge&logo=react-router&logoColor=white" alt="restAPI"/>   
 </p>
      
-  <h3 align="center"><a href="https://deepeshgodwani.github.io/QR-Code-Generator-and-Scanner/"><strong>Want to see live preview »</strong></a></h3>
+  <h3 align="center"><a href="https://deepeshgodhwani.github.io/QR-Code-Generator-and-Scanner/"><strong>Want to see live preview »</strong></a></h3>
    
     
   <p align="center"> 
