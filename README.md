@@ -55,13 +55,13 @@ This project was built using, Tailwind CSS, React, ChakraUI and Rest API. It is 
 ### Setup
 
 
-The project repository can be found in [GitHub link](https://github.com/Deepeshgodwani/QR-Code-Generator-and-Scanner) or just clone the project using this command. 
+The project repository can be found in [GitHub link](https://github.com/Deepeshgodhwani/QR-Code-Generator-and-Scanner) or just clone the project using this command. 
 
 
 ```
 Using HTTPS
 
-# git clone  https://github.com/Deepeshgodwani/QR-Code-Generator-and-Scanner.git
+# git clone  https://github.com/Deepeshgodhwani/QR-Code-Generator-and-Scanner.git
 ```
 
 + Open terminal on your workspace with
@@ -118,8 +118,8 @@ npm run dev
 
 If you want to contact me, you can reach me through below handles.
 
-[![linkedin](https://img.shields.io/badge/Deepesh_Godwani-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/deeepesh-godwani-4269531b0)
-[![Twitter](https://img.shields.io/badge/Deepesh_Godwani-20232A?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/Deepeshgodwani)
+[![linkedin](https://img.shields.io/badge/Deepesh_Godwani-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/deeepesh-godhwani-4269531b0)
+[![Twitter](https://img.shields.io/badge/Deepesh_Godwani-20232A?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/Deepeshgodhwani)
 
 © 2023 Deepesh Godwani
 
