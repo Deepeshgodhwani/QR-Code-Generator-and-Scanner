@@ -30,6 +30,7 @@ pipeline {
         stage("Build") {
             steps {
                 // Fix npm permission issue
+                sh 'rm -rf node_modules'
                 sh 'npm install'
                 sh 'docker build -t ${DOCKER_REPO}/${FRONTEND_IMAGE}:${BUILD_NUMBER} .'
             }
