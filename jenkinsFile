@@ -28,4 +28,11 @@ pipeline{
           sh 'docker push ${DOCKER_REPO}/${FRONTEND_IMAGE}:${BUILD_NUMBER}'
         }
     }
+
+    post {
+        success {
+            mail to: "${env.EMAIL_RECIPIENT}",
+                subject: "Build Successful",
+                body: "CI process completed successfully."
+        }
 }
