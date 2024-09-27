@@ -8,7 +8,7 @@ pipeline{
 
     environment{
         DOCKER_CREDENTIALS_ID = 'docker_hub_credentials'
-        DOCKER_REPO = "depeshgodhwani",
+        DOCKER_REPO = "depeshgodhwani"
         FRONTEND_IMAGE='qr-scanner'
         EMAIL_RECIPIENT="deepeshgodhwani28@gmail.com"
         AWS_REGION = 'your-region'                        // Replace with your AWS region
