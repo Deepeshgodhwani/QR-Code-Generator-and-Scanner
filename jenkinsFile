@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'node:18.16.1'
-            args '-v /var/run/docker.sock:/var/run/docker.sock'
+            args '--user root -v /var/run/docker.sock:/var/run/docker.sock'
         }
     }
 
@@ -43,19 +43,6 @@ pipeline {
                     }
                 }
             }
-        }
-    }
-
-    post {
-        success {
-            mail to: "${env.EMAIL_RECIPIENT}",
-                subject: "Build Successful",
-                body: "CI process completed successfully."
-        }
-        failure {
-            mail to: "${env.EMAIL_RECIPIENT}",
-                subject: "Build Failed",
-                body: "CI process failed. Please check the Jenkins logs for details."
         }
     }
 }
