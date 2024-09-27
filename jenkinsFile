@@ -7,6 +7,7 @@ pipeline {
     }
 
     environment {
+        GIT_CREDENTIALS_ID = 'github_credentials'
         DOCKER_CREDENTIALS_ID = 'docker_hub_credentials'
         DOCKER_REPO = "depeshgodhwani"
         FRONTEND_IMAGE = 'qr-scanner'
@@ -16,9 +17,19 @@ pipeline {
     }
 
     stages {
+        stage('Checkout SCM') {
+            steps {
+                checkout([$class: 'GitSCM',
+                          branches: [[name: '*/main']],
+                          userRemoteConfigs: [[url: 'https://github.com/Deepeshgodhwani/QR-Code-Generator-and-Scanner',
+                                               credentialsId: "${env.GIT_CREDENTIALS_ID}"]]
+                ])
+            }
+        }
+
         stage("Build") {
             steps {
-                sh 'npm install'
+                sh 'npm install --unsafe-perm'
                 sh 'docker build -t ${DOCKER_REPO}/${FRONTEND_IMAGE}:${BUILD_NUMBER} .'
             }
         }
