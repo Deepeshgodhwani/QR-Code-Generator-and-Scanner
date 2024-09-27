@@ -1,0 +1,31 @@
+pipeline{
+    agent:{
+        docker{
+            image 'node:18.16.1'
+            args '-v /var/run/docker.sock:/var/run/docker.sock'
+        }
+    }
+
+    environment{
+        DOCKER_CREDENTIALS_ID = 'docker_hub_credentials'
+        DOCKER_REPO = "depeshgodhwani",
+        FRONTEND_IMAGE='qr-scanner'
+        EMAIL_RECIPIENT="deepeshgodhwani28@gmail.com"
+        AWS_REGION = 'your-region'                        // Replace with your AWS region
+        EKS_CLUSTER = 'your-cluster-name' 
+    }
+
+    stages{
+        stage("Build"){
+          sh 'npm install'
+          sh 'docker build -t ${DOCKER_REPO}/${FRONTEND_IMAGE}:${BUILD_NUMBER} .'
+        }
+    }
+
+    stages{
+        stage("Push image to docker hub"){
+         docker.with
+          sh 'docker push ${DOCKER_REPO}/${FRONTEND_IMAGE}:${BUILD_NUMBER}'
+        }
+    }
+}

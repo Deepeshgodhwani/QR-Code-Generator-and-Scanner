@@ -78,8 +78,10 @@ function QrGenerator() {
             <i className="fa-sharp fa-solid text-2xl fa-circle-down"></i>
 
             <div className="text-center -space-y-1">
-              <p>Download</p>
-              <p className="text-xs text-[rgb(240,243,235)]">PNG</p>
+              <a target="_blank" rel="noreferrer" href={src} download="QR">
+                <p>Download</p>
+                <p className="text-xs text-[rgb(240,243,235)]">PNG</p>
+              </a>
             </div>
           </div>
         </div>

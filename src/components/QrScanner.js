@@ -10,13 +10,13 @@ function QrScanner() {
       let box = document.getElementById("box");
       box.innerText = "Scanning QR Code...";
       let borderBox = document.getElementById("borderBox");
-      borderBox.style.borderColor="rgb(11,133,255)"
-      borderBox.style.color="rgb(11,133,255)"
+      borderBox.style.borderColor = "rgb(11,133,255)";
+      borderBox.style.color = "rgb(11,133,255)";
       let file = e.target.files[0];
       if (!file) return;
       let formData = new FormData();
       formData.append("file", file);
-      let response = await fetch("http://api.qrserver.com/v1/read-qr-code/", {
+      let response = await fetch("https://api.qrserver.com/v1/read-qr-code/", {
         method: "POST",
         body: formData,
       });
@@ -48,24 +48,26 @@ function QrScanner() {
   const onDrag = () => {
     let box = document.getElementById("box");
     let borderBox = document.getElementById("borderBox");
-    borderBox.style.borderColor="rgb(255,108,55)"
-    borderBox.style.color="rgb(255,108,55)"
+    borderBox.style.borderColor = "rgb(255,108,55)";
+    borderBox.style.color = "rgb(255,108,55)";
     box.innerText = "Drop image here";
-    
   };
 
   const dragEnd = () => {
     let box = document.getElementById("box");
     box.innerText = "Drag and drop or upload your image";
     let borderBox = document.getElementById("borderBox");
-    borderBox.style.borderColor="rgb(11,133,255)"
-    borderBox.style.color="rgb(11,133,255)"
+    borderBox.style.borderColor = "rgb(11,133,255)";
+    borderBox.style.color = "rgb(11,133,255)";
   };
 
   return (
     <div className="space-x-2 z-10 h-[100vh] bg-[rgb(219,226,255)]   flex justify-center items-center">
       <div className=" rounded-md  bg-white shadow-xl flex  justify-center items-center  w-[35rem] h-96 ">
-        <div id="borderBox" className="h-80 font-bold text-lg  border-2 border-[rgb(11,133,255)] border-dotted relative space-y-2 text-[rgb(11,133,255)] rounded-md flex justify-center items-center flex-col w-[90%]">
+        <div
+          id="borderBox"
+          className="h-80 font-bold text-lg  border-2 border-[rgb(11,133,255)] border-dotted relative space-y-2 text-[rgb(11,133,255)] rounded-md flex justify-center items-center flex-col w-[90%]"
+        >
           <i className="fas text-[4rem] fa-cloud-upload"></i>
           <p id="box">Drag and drop or upload your image</p>
           <input
