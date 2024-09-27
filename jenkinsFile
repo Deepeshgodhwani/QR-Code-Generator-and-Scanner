@@ -12,8 +12,8 @@ pipeline {
         DOCKER_REPO = "depeshgodhwani"
         FRONTEND_IMAGE = 'qr-scanner'
         EMAIL_RECIPIENT = "deepeshgodhwani28@gmail.com"
-        AWS_REGION = 'your-region'              // Replace with your AWS region
-        EKS_CLUSTER = 'your-cluster-name'       // Replace with your EKS cluster name
+        AWS_REGION = 'your-region'             
+        EKS_CLUSTER = 'your-cluster-name'       
     }
 
     stages {
@@ -29,7 +29,8 @@ pipeline {
 
         stage("Build") {
             steps {
-                sh 'npm install --unsafe-perm'
+                // Fix npm permission issue
+                sh 'npm install --unsafe-perm --no-cache'
                 sh 'docker build -t ${DOCKER_REPO}/${FRONTEND_IMAGE}:${BUILD_NUMBER} .'
             }
         }
