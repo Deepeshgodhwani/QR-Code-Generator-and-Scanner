@@ -1,31 +1,36 @@
-pipeline{
-    agent:{
-        docker{
+pipeline {
+    agent {
+        docker {
             image 'node:18.16.1'
             args '-v /var/run/docker.sock:/var/run/docker.sock'
         }
     }
 
-    environment{
+    environment {
         DOCKER_CREDENTIALS_ID = 'docker_hub_credentials'
         DOCKER_REPO = "depeshgodhwani"
-        FRONTEND_IMAGE='qr-scanner'
-        EMAIL_RECIPIENT="deepeshgodhwani28@gmail.com"
-        AWS_REGION = 'your-region'                        // Replace with your AWS region
-        EKS_CLUSTER = 'your-cluster-name' 
+        FRONTEND_IMAGE = 'qr-scanner'
+        EMAIL_RECIPIENT = "deepeshgodhwani28@gmail.com"
+        AWS_REGION = 'your-region'              // Replace with your AWS region
+        EKS_CLUSTER = 'your-cluster-name'       // Replace with your EKS cluster name
     }
 
-    stages{
-        stage("Build"){
-          sh 'npm install'
-          sh 'docker build -t ${DOCKER_REPO}/${FRONTEND_IMAGE}:${BUILD_NUMBER} .'
+    stages {
+        stage("Build") {
+            steps {
+                sh 'npm install'
+                sh 'docker build -t ${DOCKER_REPO}/${FRONTEND_IMAGE}:${BUILD_NUMBER} .'
+            }
         }
-    }
 
-    stages{
-        stage("Push image to docker hub"){
-         docker.with
-          sh 'docker push ${DOCKER_REPO}/${FRONTEND_IMAGE}:${BUILD_NUMBER}'
+        stage("Push image to Docker Hub") {
+            steps {
+                script {
+                    docker.withRegistry('https://index.docker.io/v1/', "${DOCKER_CREDENTIALS_ID}") {
+                        sh 'docker push ${DOCKER_REPO}/${FRONTEND_IMAGE}:${BUILD_NUMBER}'
+                    }
+                }
+            }
         }
     }
 
@@ -35,4 +40,10 @@ pipeline{
                 subject: "Build Successful",
                 body: "CI process completed successfully."
         }
+        failure {
+            mail to: "${env.EMAIL_RECIPIENT}",
+                subject: "Build Failed",
+                body: "CI process failed. Please check the Jenkins logs for details."
+        }
+    }
 }
