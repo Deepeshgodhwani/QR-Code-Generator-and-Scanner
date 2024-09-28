@@ -13,7 +13,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route exact path="/QR-Code-Generator-and-Scanner" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route exact path="/QR-Code-Generator-and-Scanner/getStarted" element={<GetStarted />} />
           <Route exact path="/QR-Code-Generator-and-Scanner/genrator" element={<QrGenerator />} />
           <Route exact path="/QR-Code-Generator-and-Scanner/scanner" element={<QrScanner />} />
