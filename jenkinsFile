@@ -12,8 +12,9 @@ pipeline {
         DOCKER_REPO = "deepeshgodhwani"
         FRONTEND_IMAGE = 'qr-scanner'
         EMAIL_RECIPIENT = "deepeshgodhwani28@gmail.com"
-        AWS_REGION = 'your-region'             
-        EKS_CLUSTER = 'your-cluster-name'       
+        AWS_REGION = 'eu-north-1' // e.g., 'us-west-2'
+        EC2_INSTANCE_IP = '13.60.92.96' // Replace with your EC2 instance's public IP
+        AWS_CREDENTIALS_ID = 'aws-credentials' // Jenkins AWS credentials ID    
     }
 
     stages {
@@ -45,5 +46,27 @@ pipeline {
                 }
             }
         }
+       stage("Deploy to EC2") {
+            steps {
+                script {
+                    // Use AWS credentials for SSH access
+                    withCredentials([sshUserPrivateKey(credentialsId: 'ec2-ssh-key', keyFileVariable: 'SSH_KEY')]) {
+                        // SSH into EC2 instance and deploy the Docker image
+                        sh """
+                            ssh -o StrictHostKeyChecking=no -i ${SSH_KEY} ubuntu@${EC2_INSTANCE_IP} << 'EOF'
+                                # Stop the existing container if it exists
+                                docker stop ${FRONTEND_IMAGE} || true
+                                docker rm ${FRONTEND_IMAGE} || true
+                                
+                                # Pull the latest Docker image from Docker Hub
+                                docker pull ${DOCKER_REPO}/${FRONTEND_IMAGE}:${BUILD_NUMBER}
+                                
+                                # Run the new container
+                                docker run -d --name ${FRONTEND_IMAGE} -p 3000:3000 ${DOCKER_REPO}/${FRONTEND_IMAGE}:${BUILD_NUMBER}
+                            EOF
+                        """
+                    }
+                }
+            }
     }
 }
